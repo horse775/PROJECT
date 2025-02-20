@@ -1,0 +1,3174 @@
+################################################################################
+#                                                                              #
+#      IAR Universal Linker V6.5.1.95                                          #
+#                                                                              #
+#           Link time     =  08/Sep/2022  10:03:58                             #
+#           Target CPU    =  MSP430                                            #
+#           List file     =  C:\Users\133\Desktop\AC210-13-V1.0-AM35-6-20-MEL- #
+#                            P-220430A-V2.0\program\Debug\List\AM35HUAWEI-24V- #
+#                            MSP430FR2155_9_7_V1.2.map                         #
+#           Output file 1 =  C:\Users\133\Desktop\AC210-13-V1.0-AM35-6-20-MEL- #
+#                            P-220430A-V2.0\program\Debug\Exe\AM35HUAWEI-24V-M #
+#                            SP430FR2155_9_7_V1.2.txt                          #
+#                            Format: msp430_txt                                #
+#           Output file 2 =  C:\Users\133\Desktop\AC210-13-V1.0-AM35-6-20-MEL- #
+#                            P-220430A-V2.0\program\Debug\Exe\AM35开关电源方案 #
+#                            -24V-MSP430FR2155.txt                             #
+#                            Format: msp430_txt                                #
+#           Command line  =  -f C:\Users\133\AppData\Local\Temp\EW2B1C.tmp     #
+#                            (C:\Users\133\Desktop\AC210-13-V1.0-AM35-6-20-MEL #
+#                            -P-220430A-V2.0\program\Debug\Obj\ADSampling.r43  #
+#                            C:\Users\133\Desktop\AC210-13-V1.0-AM35-6-20-MEL- #
+#                            P-220430A-V2.0\program\Debug\Obj\flash.r43        #
+#                            C:\Users\133\Desktop\AC210-13-V1.0-AM35-6-20-MEL- #
+#                            P-220430A-V2.0\program\Debug\Obj\GlobalVariable.r #
+#                            43                                                #
+#                            C:\Users\133\Desktop\AC210-13-V1.0-AM35-6-20-MEL- #
+#                            P-220430A-V2.0\program\Debug\Obj\Initialize.r43   #
+#                            C:\Users\133\Desktop\AC210-13-V1.0-AM35-6-20-MEL- #
+#                            P-220430A-V2.0\program\Debug\Obj\KeyManage.r43    #
+#                            C:\Users\133\Desktop\AC210-13-V1.0-AM35-6-20-MEL- #
+#                            P-220430A-V2.0\program\Debug\Obj\LINUart.r43      #
+#                            C:\Users\133\Desktop\AC210-13-V1.0-AM35-6-20-MEL- #
+#                            P-220430A-V2.0\program\Debug\Obj\LINUart0.r43     #
+#                            C:\Users\133\Desktop\AC210-13-V1.0-AM35-6-20-MEL- #
+#                            P-220430A-V2.0\program\Debug\Obj\main.r43         #
+#                            C:\Users\133\Desktop\AC210-13-V1.0-AM35-6-20-MEL- #
+#                            P-220430A-V2.0\program\Debug\Obj\MotorControl.r43 #
+#                            C:\Users\133\Desktop\AC210-13-V1.0-AM35-6-20-MEL- #
+#                            P-220430A-V2.0\program\Debug\Obj\PowerInScan.r43  #
+#                            C:\Users\133\Desktop\AC210-13-V1.0-AM35-6-20-MEL- #
+#                            P-220430A-V2.0\program\Debug\Obj\SignalSampling.r #
+#                            43                                                #
+#                            C:\Users\133\Desktop\AC210-13-V1.0-AM35-6-20-MEL- #
+#                            P-220430A-V2.0\program\Debug\Obj\Time.r43         #
+#                            C:\Users\133\Desktop\AC210-13-V1.0-AM35-6-20-MEL- #
+#                            P-220430A-V2.0\program\Debug\Obj\timer.r43        #
+#                            -o                                                #
+#                            C:\Users\133\Desktop\AC210-13-V1.0-AM35-6-20-MEL- #
+#                            P-220430A-V2.0\program\Debug\Exe\AM35HUAWEI-24V-M #
+#                            SP430FR2155_9_7_V1.2.txt                          #
+#                            -Fmsp430_txt -l                                   #
+#                            C:\Users\133\Desktop\AC210-13-V1.0-AM35-6-20-MEL- #
+#                            P-220430A-V2.0\program\Debug\List\AM35HUAWEI-24V- #
+#                            MSP430FR2155_9_7_V1.2.map                         #
+#                            -xms -IF:\IAR\430\LIB\ -f                         #
+#                            C:\Users\133\Desktop\AC210-13-V1.0-AM35-6-20-MEL- #
+#                            P-220430A-V2.0\program\source\FR2155_App_MemLayou #
+#                            t.xcl                                             #
+#                            (-cmsp430 -QCODE_I=CODE_ID -QTLS16_I=TLS16_ID     #
+#                            -D__iar_HWMUL=4C0 -Z(CONST)INFO=1800-19FF         #
+#                            -Z(DATA)DATA16_N=1800-19FF                        #
+#                            -Z(DATA)TINYRAM=0006-001F                         #
+#                            -Z(DATA)DATA16_I,DATA16_Z,TLS16_I=2000-2FFF       #
+#                            -Z(DATA)CODE_I                                    #
+#                            -Z(DATA)DATA20_I,DATA20_Z,DATA20_N                #
+#                            -Z(DATA)CSTACK+_STACK_SIZE#                       #
+#                            -Z(CONST)FRWP_B1,DATA16_P,DATA20_P=8000-CFFF      #
+#                            -Z(DATA)DATA16_HEAP+_DATA16_HEAP_SIZE,DATA20_HEAP #
+#                            +_DATA20_HEAP_SIZE,FRWP_B2                        #
+#                            -Z(CONST)DATA16_C,DATA16_ID,TLS16_ID,DIFUNCT,CHEC #
+#                            KSUM=8000-CFFF                                    #
+#                            -Z(CONST)DATA20_C,DATA20_ID                       #
+#                            -Z(CODE)CSTART,ISR_CODE,CODE_ID=8000-CFFF         #
+#                            -P(CODE)CODE,CODE16=8000-CFFF                     #
+#                            -Z(CONST)BSLCONFIGURATIONSIGNATURE=FF88-FF89      #
+#                            -Z(CONST)BSLCONFIGURATION=FF8A-FF8B               #
+#                            -Z(CONST)BSLI2CADDRESS=FFA0-FFA1                  #
+#                            -Z(CONST)JTAGSIGNATURE=FF80-FF83                  #
+#                            -Z(CONST)BSLSIGNATURE=FF84-FF87                   #
+#                            -Z(CODE)INTVEC=FFA2-FFFF                          #
+#                            -Z(CODE)RESET=FFFE-FFFF) -f                       #
+#                            F:\IAR\430\config\linker\multiplier32.xcl         #
+#                            (-e?Mul8Hw=?Mul8 -e?Mul16Hw=?Mul16                #
+#                            -e?Mul16to32uHw=?Mul16to32u                       #
+#                            -e?Mul16to32sHw=?Mul16to32s -e?Mul32Hw32=?Mul32   #
+#                            -e?Mul64Hw32=_Mul64i                              #
+#                            -e?Mul32u32uto64iHw32=_Mul32u32uto64i             #
+#                            -e?Mul32fHw32=_Mul32f                             #
+#                            -e_Mul64fHw32Ptr=_Mul64fPtr) -D_STACK_SIZE=A0     #
+#                            F:\IAR\430\lib\dlib\dl430xlsfn.r43                #
+#                            -D_DATA16_HEAP_SIZE=A0                            #
+#                            -Omsp430_txt=C:\Users\133\Desktop\AC210-13-V1.0-A #
+#                            M35-6-20-MEL-P-220430A-V2.0\program\Debug\Exe\AM3 #
+#                            5开关电源方案-24V-MSP430FR2155.txt                #
+#                            -s __program_start -D_DATA20_HEAP_SIZE=50)        #
+#                                                                              #
+#                           Copyright (C) 1987-2016 IAR Systems AB.            #
+################################################################################
+
+
+
+
+
+                ****************************************
+                *                                      *
+                *           CROSS REFERENCE            *
+                *                                      *
+                ****************************************
+
+       Program entry at :           8036  Relocatable, from module : ?cstart
+
+
+
+
+                ****************************************
+                *                                      *
+                *            RUNTIME MODEL             *
+                *                                      *
+                ****************************************
+
+  __Heap_Handler             = Basic
+  __SystemLibrary            = DLib
+  __code_model               = large
+  __core                     = 430X
+  __data_model               = small
+  __dlib_file_descriptor     = 0
+  __dlib_full_locale_support = 0
+  __double_size              = 32
+  __pic                      = no
+  __reg_r4                   = free
+  __reg_r5                   = free
+  __rt_version               = 3
+
+                ****************************************
+                *                                      *
+                *    AUTOMATIC SYMBOL REDIRECTIONS     *
+                *                                      *
+                ****************************************
+
+                  There are no automatic symbol redirections.
+
+
+
+                ****************************************
+                *                                      *
+                *              MODULE MAP              *
+                *                                      *
+                ****************************************
+
+
+  DEFINED ABSOLUTE ENTRIES
+    *************************************************************************
+
+  DEFINED ABSOLUTE ENTRIES
+  PROGRAM MODULE, NAME : ?ABS_ENTRY_MOD
+
+Absolute parts
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _DATA20_HEAP_SIZE       0050 
+           _DATA16_HEAP_SIZE       00A0 
+           _STACK_SIZE             00A0 
+           __iar_HWMUL             04C0            Angle_calculation (MotorControl)
+                                                   CountPercentPlace (LINUart)
+                                                   JourneyPercentCount (LINUart)
+    *************************************************************************
+
+  FILE NAME : C:\Users\133\Desktop\AC210-13-V1.0-AM35-6-20-MEL-P-220430A-V2.0\program\Debug\Obj\ADSampling.r43
+  PROGRAM MODULE, NAME : ADSampling
+
+  SEGMENTS IN THE MODULE
+  ======================
+DATA16_AN
+  Relative segment, address: 0700 - 0701 (0x2 bytes), align: 0
+  Segment part 1. ROOT        Intra module refs:   ADCSetting
+                                                   ADSamping
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_ADCCTL0_L            0700 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ADCCTL0                 0700 
+           ADCCTL0_H               0701 
+           ADCCTL0_L               0700 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0702 - 0703 (0x2 bytes), align: 0
+  Segment part 2. ROOT        Intra module refs:   ADCSetting
+                                                   ADSamping
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_ADCCTL1_L            0702 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ADCCTL1                 0702 
+           ADCCTL1_H               0703 
+           ADCCTL1_L               0702 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0704 - 0705 (0x2 bytes), align: 0
+  Segment part 3. ROOT        Intra module refs:   ADCSetting
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_ADCCTL2_L            0704 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ADCCTL2                 0704 
+           ADCCTL2_H               0705 
+           ADCCTL2_L               0704 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 070A - 070B (0x2 bytes), align: 0
+  Segment part 4. ROOT        Intra module refs:   ADCSetting
+                                                   ADSamping
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_ADCMCTL0_L           070A 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ADCMCTL0                070A 
+           ADCMCTL0_H              070B 
+           ADCMCTL0_L              070A 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0712 - 0713 (0x2 bytes), align: 0
+  Segment part 5. ROOT        Intra module refs:   ADSamping
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_ADCMEM0_L            0712 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ADCMEM0                 0712 
+           ADCMEM0_H               0713 
+           ADCMEM0_L               0712 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 020A - 020B (0x2 bytes), align: 0
+  Segment part 6. ROOT        Intra module refs:   ADCSetting
+                                                   GPIOSetting (Initialize)
+                                                   LinUart0Init (LINUart0)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_PASEL0_L             020A 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PASEL0                  020A 
+           PASEL0_H                020B 
+           PASEL0_L                020A 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 020C - 020D (0x2 bytes), align: 0
+  Segment part 7. ROOT        Intra module refs:   ADCSetting
+                                                   GPIOSetting (Initialize)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_PASEL1_L             020C 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PASEL1                  020C 
+           PASEL1_H                020D 
+           PASEL1_L                020C 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0120 - 0121 (0x2 bytes), align: 0
+  Segment part 8. ROOT        Intra module refs:   ADCSetting
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_PMMCTL0_L            0120 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PMMCTL0                 0120 
+           PMMCTL0_H               0121 
+           PMMCTL0_L               0120 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0124 - 0125 (0x2 bytes), align: 0
+  Segment part 9. ROOT        Intra module refs:   ADCSetting
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_PMMCTL2_L            0124 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PMMCTL2                 0124 
+           PMMCTL2_H               0125 
+           PMMCTL2_L               0124 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 204C - 204C (0x1 bytes), align: 0
+  Segment part 11.            Intra module refs:   ADSamping
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ADC_CUR_Cnt             204C 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 200E - 200F (0x2 bytes), align: 1
+  Segment part 12.            Intra module refs:   ADSamping
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ADC_CUR_Buffer          200E 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2010 - 2017 (0x8 bytes), align: 1
+  Segment part 13.            Intra module refs:   ADSamping
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ADC_CUR_Array           2010 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 204D - 204D (0x1 bytes), align: 0
+  Segment part 14.            Intra module refs:   ADSamping
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ADC_CUR_Array_Index     204D 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: BB82 - BBBB (0x3a bytes), align: 1
+  Segment part 15.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ADCSetting              BB82            Initialize (Initialize)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: B83E - B8A9 (0x6c bytes), align: 1
+  Segment part 16.            Intra module refs:   ADSamping
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           SampleAverage           B83E            CountMotorSpeed (MotorControl)
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: B3CA - B45B (0x92 bytes), align: 1
+  Segment part 17.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ADSamping               B3CA            main (main)
+               calls direct
+
+    *************************************************************************
+
+  FILE NAME : C:\Users\133\Desktop\AC210-13-V1.0-AM35-6-20-MEL-P-220430A-V2.0\program\Debug\Obj\flash.r43
+  PROGRAM MODULE, NAME : flash
+
+  SEGMENTS IN THE MODULE
+  ======================
+DATA16_AN
+  Relative segment, address: 01CC - 01CD (0x2 bytes), align: 0
+  Segment part 1. ROOT        Intra module refs:   DeleteAllID
+                                                   DeleteChannel
+                                                   Initialize (Initialize)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_WDTCTL_L             01CC 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           WDTCTL                  01CC 
+           WDTCTL_H                01CD 
+           WDTCTL_L                01CC 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: BA2E - BA7B (0x4e bytes), align: 1
+  Segment part 6.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           CompID                  BA2E            RFDataDisposal (SignalSampling)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: BA7C - BAC3 (0x48 bytes), align: 1
+  Segment part 7.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           SaveID                  BA7C            RFDataDisposal (SignalSampling)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: BD32 - BD57 (0x26 bytes), align: 1
+  Segment part 8.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           SaveChannel             BD32            RFDataDisposal (SignalSampling)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: B676 - B6EF (0x7a bytes), align: 1
+  Segment part 9.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           DeleteChannel           B676            RFDataDisposal (SignalSampling)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: BAC4 - BB09 (0x46 bytes), align: 1
+  Segment part 10.            Intra module refs:   DeleteAllID
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           JourneyDelete           BAC4            UartDataDisposal (LINUart0)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 204E - 204E (0x1 bytes), align: 0
+  Segment part 3.             Intra module refs:   JourneyDelete
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           JourneyDelete::LIMIT_i
+                                   204E 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: B578 - B5F7 (0x80 bytes), align: 1
+  Segment part 11.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           DeleteAllID             B578            main (main)
+               calls direct
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 204F - 204F (0x1 bytes), align: 0
+  Segment part 4.             Intra module refs:   DeleteAllID
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           DeleteAllID::i          204F 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2050 - 2050 (0x1 bytes), align: 0
+  Segment part 5.             Intra module refs:   DeleteAllID
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           DeleteAllID::j          2050 
+
+    *************************************************************************
+
+  FILE NAME : C:\Users\133\Desktop\AC210-13-V1.0-AM35-6-20-MEL-P-220430A-V2.0\program\Debug\Obj\GlobalVariable.r43
+  PROGRAM MODULE, NAME : GlobalVariable
+
+  SEGMENTS IN THE MODULE
+  ======================
+DATA16_Z
+  Relative segment, address: 2051 - 2057 (0x7 bytes), align: 0
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Flag                    2051            Angle_calculation (MotorControl)
+                                                   DblclickTimeLimit (Time)
+                                                   DeleteAllID (flash)
+                                                   Enter_test (SignalSampling)
+                                                   Initialize (Initialize)
+                                                   JourneyComper (MotorControl)
+                                                   JourneyDelete (flash)
+                                                   KeyControl (KeyManage)
+                                                   KeyManage (KeyManage)
+                                                   LearnDelCodeTime (Time)
+                                                   LearnUartID (LINUart)
+                                                   MotorControl (MotorControl)
+                                                   MotorStatusSwitch (MotorControl)
+                                                   Motor_Data_Change_Send (LINUart0)
+                                                   RFDataDisposal (SignalSampling)
+                                                   RFStatusInspect (SignalSampling)
+                                                   SetLimitPoint (SignalSampling)
+                                                   SlowStop (MotorControl)
+                                                   TimeControl (Time)
+                                                   Timer3_B1 (Time)
+                                                   USCI_A1_ISR (LINUart)
+                                                   Uart1DataDisposal (LINUart)
+                                                   Uart1StartupTX (LINUart)
+                                                   UartControl (LINUart)
+                                                   UartControl_WIFI (LINUart0)
+                                                   UartDataDisposal (LINUart0)
+                                                   main (main)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2058 - 2058 (0x1 bytes), align: 0
+  Segment part 3.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Flag_RF                 2058            ErrorDisposal (SignalSampling)
+                                                   RFSignalDecode (SignalSampling)
+                                                   Timer3_B0 (timer)
+                                                   main (main)
+    -------------------------------------------------------------------------
+DATA16_N
+  Relative segment, address: 184C - 184D (0x2 bytes), align: 0
+  Segment part 4.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           MotorFlag               184C            Angle_calculation (MotorControl)
+                                                   CountPercentPlace (LINUart)
+                                                   DeleteAllID (flash)
+                                                   DetectHallSignal (timer)
+                                                   Dispose_All_Date_For_TX (LINUart0)
+                                                   JourneyComper (MotorControl)
+                                                   JourneyPercentCount (LINUart)
+                                                   MotorControl (MotorControl)
+                                                   MotorStatusSwitch (MotorControl)
+                                                   Motor_Data_Change_Send (LINUart0)
+                                                   RFDataDisposal (SignalSampling)
+                                                   Uart1DataDisposal (LINUart)
+                                                   Uart1StartupTX (LINUart)
+                                                   UartControl (LINUart)
+                                                   UartControl_WIFI (LINUart0)
+                                                   UartDataDisposal (LINUart0)
+                                                   UartStartupTX (LINUart0)
+                                                   VariableInitialize (Initialize)
+                                                   main (main)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2059 - 205E (0x6 bytes), align: 0
+  Segment part 5.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Motor_Data_Bak          2059            Motor_Data_Change_Send (LINUart0)
+                                                   UartStartupTX (LINUart0)
+    -------------------------------------------------------------------------
+DATA16_N
+  Relative segment, address: 1800 - 1801 (0x2 bytes), align: 1
+  Segment part 6.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Hall_Pulse_Width        1800            CountMotorSpeed (MotorControl)
+                                                   DetectHallSignal (timer)
+                                                   VariableInitialize (Initialize)
+    -------------------------------------------------------------------------
+DATA16_N
+  Relative segment, address: 1802 - 1805 (0x4 bytes), align: 1
+  Segment part 7.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Hall_Pulse_Amount_Cnt   1802            Angle_calculation (MotorControl)
+                                                   DetectHallSignal (timer)
+                                                   JourneyComper (MotorControl)
+                                                   JourneyDelete (flash)
+                                                   JourneyPercentCount (LINUart)
+                                                   MeetPlugbDetect (MotorControl)
+                                                   MotorControl (MotorControl)
+                                                   MotorStatusSwitch (MotorControl)
+                                                   RFDataDisposal (SignalSampling)
+                                                   SetLimitPoint (SignalSampling)
+                                                   SlowStop (MotorControl)
+                                                   Uart1DataDisposal (LINUart)
+                                                   UartControl (LINUart)
+                                                   UartControl_WIFI (LINUart0)
+                                                   UartDataDisposal (LINUart0)
+                                                   VariableInitialize (Initialize)
+    -------------------------------------------------------------------------
+DATA16_N
+  Relative segment, address: 184E - 184E (0x1 bytes), align: 0
+  Segment part 8.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Current_Angle           184E            Angle_calculation (MotorControl)
+                                                   Dispose_All_Date_For_TX (LINUart0)
+                                                   Motor_Data_Change_Send (LINUart0)
+                                                   UartDataDisposal (LINUart0)
+                                                   UartStartupTX (LINUart0)
+    -------------------------------------------------------------------------
+DATA16_N
+  Relative segment, address: 1806 - 1809 (0x4 bytes), align: 1
+  Segment part 9.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Hall_Pulse_Amount_up    1806            Angle_calculation (MotorControl)
+    -------------------------------------------------------------------------
+DATA16_N
+  Relative segment, address: 180A - 180D (0x4 bytes), align: 1
+  Segment part 10.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Hall_difference         180A            Angle_calculation (MotorControl)
+    -------------------------------------------------------------------------
+DATA16_N
+  Relative segment, address: 184F - 184F (0x1 bytes), align: 0
+  Segment part 11.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Restrict_Up             184F            JourneyDelete (flash)
+                                                   RFDataDisposal (SignalSampling)
+                                                   UartDataDisposal (LINUart0)
+                                                   VariableInitialize (Initialize)
+    -------------------------------------------------------------------------
+DATA16_N
+  Relative segment, address: 180E - 1831 (0x24 bytes), align: 1
+  Segment part 12.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Limit_Point             180E            CountPercentPlace (LINUart)
+                                                   Dispose_All_Date_For_TX (LINUart0)
+                                                   Initialize (Initialize)
+                                                   JourneyComper (MotorControl)
+                                                   JourneyDelete (flash)
+                                                   JourneyPercentCount (LINUart)
+                                                   LearnDelCodeTime (Time)
+                                                   LimitCollator (SignalSampling)
+                                                   LimitLLC (SignalSampling)
+                                                   LoopCompare (SignalSampling)
+                                                   MotorControl (MotorControl)
+                                                   MotorStatusSwitch (MotorControl)
+                                                   Motor_Data_Change_Send (LINUart0)
+                                                   RFDataDisposal (SignalSampling)
+                                                   SetLimitPoint (SignalSampling)
+                                                   Uart1DataDisposal (LINUart)
+                                                   Uart1StartupTX (LINUart)
+                                                   UartControl (LINUart)
+                                                   UartControl_WIFI (LINUart0)
+                                                   UartDataDisposal (LINUart0)
+                                                   VariableInitialize (Initialize)
+    -------------------------------------------------------------------------
+DATA16_N
+  Relative segment, address: 1850 - 1850 (0x1 bytes), align: 0
+  Segment part 13.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Hall_Status_Buffer      1850            DetectHallSignal (timer)
+                                                   VariableInitialize (Initialize)
+    -------------------------------------------------------------------------
+DATA16_N
+  Relative segment, address: 1851 - 1851 (0x1 bytes), align: 0
+  Segment part 14.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           hall_change_cnt         1851            DetectHallSignal (timer)
+                                                   VariableInitialize (Initialize)
+    -------------------------------------------------------------------------
+DATA16_N
+  Relative segment, address: 1832 - 1833 (0x2 bytes), align: 1
+  Segment part 15.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Hall_Time_Cnt           1832            DetectHallSignal (timer)
+                                                   VariableInitialize (Initialize)
+    -------------------------------------------------------------------------
+DATA16_N
+  Relative segment, address: 1834 - 1835 (0x2 bytes), align: 1
+  Segment part 16.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Power_Down_Cnt          1834            VariableInitialize (Initialize)
+    -------------------------------------------------------------------------
+DATA16_N
+  Relative segment, address: 1852 - 1852 (0x1 bytes), align: 0
+  Segment part 17.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Joint_Time_Level        1852            DeleteAllID (flash)
+                                                   Dispose_All_Date_For_TX (LINUart0)
+                                                   JourneyComper (MotorControl)
+                                                   Motor_Data_Change_Send (LINUart0)
+                                                   RFDataDisposal (SignalSampling)
+                                                   Uart1DataDisposal (LINUart)
+                                                   Uart1StartupTX (LINUart)
+                                                   UartDataDisposal (LINUart0)
+                                                   UartStartupTX (LINUart0)
+                                                   VariableInitialize (Initialize)
+    -------------------------------------------------------------------------
+DATA16_N
+  Relative segment, address: 1836 - 1839 (0x4 bytes), align: 1
+  Segment part 18.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Initialize_FRAM_FLAG    1836            Initialize (Initialize)
+                                                   VariableInitialize (Initialize)
+    -------------------------------------------------------------------------
+DATA16_N
+  Relative segment, address: 1853 - 1853 (0x1 bytes), align: 0
+  Segment part 19.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RF_ID_Amount            1853            CompID (flash)
+                                                   DeleteAllID (flash)
+                                                   DeleteChannel (flash)
+                                                   SaveChannel (flash)
+                                                   SaveID (flash)
+                                                   VariableInitialize (Initialize)
+    -------------------------------------------------------------------------
+DATA16_N
+  Relative segment, address: 1854 - 1854 (0x1 bytes), align: 0
+  Segment part 20.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RF_ID_Save_Place        1854            DeleteAllID (flash)
+                                                   DeleteChannel (flash)
+                                                   SaveID (flash)
+                                                   VariableInitialize (Initialize)
+    -------------------------------------------------------------------------
+DATA16_N
+  Relative segment, address: 1855 - 1881 (0x2d bytes), align: 0
+  Segment part 21.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RF_ID_Buffer            1855            CompID (flash)
+                                                   DeleteAllID (flash)
+                                                   DeleteChannel (flash)
+                                                   SaveChannel (flash)
+                                                   SaveID (flash)
+    -------------------------------------------------------------------------
+DATA16_N
+  Relative segment, address: 1882 - 1882 (0x1 bytes), align: 0
+  Segment part 22.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Uart_Baud_Rate          1882            LinUartInit (LINUart)
+                                                   Uart1DataDisposal (LINUart)
+                                                   Uart1StartupTX (LINUart)
+                                                   VariableInitialize (Initialize)
+    -------------------------------------------------------------------------
+DATA16_N
+  Relative segment, address: 1883 - 1883 (0x1 bytes), align: 0
+  Segment part 23.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Uart_ID                 1883            LearnUartID (LINUart)
+                                                   Uart1DataDisposal (LINUart)
+                                                   Uart1StartupTX (LINUart)
+    -------------------------------------------------------------------------
+DATA16_N
+  Relative segment, address: 1884 - 1884 (0x1 bytes), align: 0
+  Segment part 24.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Uart_CH_L               1884            LearnUartID (LINUart)
+                                                   Uart1DataDisposal (LINUart)
+                                                   Uart1StartupTX (LINUart)
+    -------------------------------------------------------------------------
+DATA16_N
+  Relative segment, address: 1885 - 1885 (0x1 bytes), align: 0
+  Segment part 25.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Uart_CH_H               1885            LearnUartID (LINUart)
+                                                   Uart1DataDisposal (LINUart)
+                                                   Uart1StartupTX (LINUart)
+    -------------------------------------------------------------------------
+DATA16_N
+  Relative segment, address: 1886 - 1886 (0x1 bytes), align: 0
+  Segment part 26.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Motor_Max_Speed         1886            Uart1DataDisposal (LINUart)
+                                                   Uart1StartupTX (LINUart)
+    -------------------------------------------------------------------------
+DATA16_N
+  Relative segment, address: 1887 - 1887 (0x1 bytes), align: 0
+  Segment part 27.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Dry_Contact_Control_Mode
+                                   1887            KeyControl (KeyManage)
+                                                   NoKey (KeyManage)
+                                                   Uart1DataDisposal (LINUart)
+                                                   Uart1StartupTX (LINUart)
+    -------------------------------------------------------------------------
+DATA16_N
+  Relative segment, address: 183A - 184B (0x12 bytes), align: 1
+  Segment part 28.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Motor                   183A            Angle_calculation (MotorControl)
+                                                   DeleteAllID (flash)
+                                                   Dispose_All_Date_For_TX (LINUart0)
+                                                   JourneyComper (MotorControl)
+                                                   KeyControl (KeyManage)
+                                                   KeyManage (KeyManage)
+                                                   LearnDelCodeTime (Time)
+                                                   MotorControl (MotorControl)
+                                                   MotorStatusSwitch (MotorControl)
+                                                   Motor_Data_Change_Send (LINUart0)
+                                                   NoKey (KeyManage)
+                                                   RFDataDisposal (SignalSampling)
+                                                   Uart1DataDisposal (LINUart)
+                                                   Uart1StartupTX (LINUart)
+                                                   UartControl (LINUart)
+                                                   UartControl_WIFI (LINUart0)
+                                                   UartDataDisposal (LINUart0)
+                                                   UartStartupTX (LINUart0)
+                                                   main (main)
+    -------------------------------------------------------------------------
+DATA16_N
+  Relative segment, address: 1888 - 1888 (0x1 bytes), align: 0
+  Segment part 29.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Switvh_Direction_Order
+                                   1888            KeyManage (KeyManage)
+    -------------------------------------------------------------------------
+DATA16_N
+  Relative segment, address: 1889 - 1889 (0x1 bytes), align: 0
+  Segment part 30.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Meet_Plugb_Level        1889            MeetPlugbDetect (MotorControl)
+                                                   Uart1DataDisposal (LINUart)
+                                                   Uart1StartupTX (LINUart)
+    -------------------------------------------------------------------------
+DATA16_I
+  Relative segment, address: 2002 - 2002 (0x1 bytes), align: 0
+  Segment part 31.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Time_10ms_Cnt           2002            TimeControl (Time)
+    -------------------------------------------------------------------------
+DATA16_I
+  Relative segment, address: 2003 - 2003 (0x1 bytes), align: 0
+  Segment part 33.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Time_50ms_Cnt           2003            RFDataDisposal (SignalSampling)
+                                                   TimeControl (Time)
+                                                   UartDataDisposal (LINUart0)
+    -------------------------------------------------------------------------
+DATA16_I
+  Relative segment, address: 2004 - 2004 (0x1 bytes), align: 0
+  Segment part 35.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Time_100ms_Cnt          2004            TimeControl (Time)
+    -------------------------------------------------------------------------
+DATA16_I
+  Relative segment, address: 2005 - 2005 (0x1 bytes), align: 0
+  Segment part 37.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Time_500ms_Cnt          2005            TimeControl (Time)
+    -------------------------------------------------------------------------
+DATA16_I
+  Relative segment, address: 2006 - 2006 (0x1 bytes), align: 0
+  Segment part 39.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Time_1s_Cnt             2006            TimeControl (Time)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 205F - 205F (0x1 bytes), align: 0
+  Segment part 41.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RF_High_Cnt             205F            RFSignalDecode (SignalSampling)
+                                                   Timer3_B0 (timer)
+                                                   main (main)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2060 - 2060 (0x1 bytes), align: 0
+  Segment part 42.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RF_Low_Cnt              2060            RFSignalDecode (SignalSampling)
+                                                   Timer3_B0 (timer)
+                                                   main (main)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2018 - 201B (0x4 bytes), align: 1
+  Segment part 43.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Hall_Pulse_Amount_PCT   2018            JourneyComper (MotorControl)
+                                                   Uart1DataDisposal (LINUart)
+                                                   UartDataDisposal (LINUart0)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 201C - 201F (0x4 bytes), align: 1
+  Segment part 44.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           OprationCue_Amount_Buf
+                                   201C            JourneyComper (MotorControl)
+                                                   MotorControl (MotorControl)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2020 - 2023 (0x4 bytes), align: 1
+  Segment part 45.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Hall_Pulse_Jiggle_Buff
+                                   2020            JourneyComper (MotorControl)
+                                                   RFDataDisposal (SignalSampling)
+                                                   UartControl_WIFI (LINUart0)
+                                                   UartDataDisposal (LINUart0)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2061 - 2066 (0x6 bytes), align: 0
+  Segment part 46.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Delete_single_Code_ID   2061            RFDataDisposal (SignalSampling)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2067 - 2067 (0x1 bytes), align: 0
+  Segment part 47.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Opretion_Event          2067            DeleteAllID (flash)
+                                                   KeyManage (KeyManage)
+                                                   LearnDelCodeTime (Time)
+                                                   MotorControl (MotorControl)
+                                                   RFDataDisposal (SignalSampling)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2068 - 2068 (0x1 bytes), align: 0
+  Segment part 48.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Target_Limit_Point      2068            JourneyComper (MotorControl)
+                                                   MotorStatusSwitch (MotorControl)
+                                                   SetLimitPoint (SignalSampling)
+    -------------------------------------------------------------------------
+DATA16_N
+  Relative segment, address: 188A - 188A (0x1 bytes), align: 0
+  Segment part 49.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Limit_Point_Amount      188A            CountPercentPlace (LINUart)
+                                                   Initialize (Initialize)
+                                                   JourneyComper (MotorControl)
+                                                   JourneyDelete (flash)
+                                                   JourneyPercentCount (LINUart)
+                                                   KeyManage (KeyManage)
+                                                   MotorStatusSwitch (MotorControl)
+                                                   RFDataDisposal (SignalSampling)
+                                                   SetLimitPoint (SignalSampling)
+                                                   Uart1StartupTX (LINUart)
+                                                   UartControl (LINUart)
+                                                   VariableInitialize (Initialize)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2069 - 2069 (0x1 bytes), align: 0
+  Segment part 50.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RF_Dblclick_Time        2069            DblclickTimeLimit (Time)
+                                                   RFDataDisposal (SignalSampling)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 206A - 206A (0x1 bytes), align: 0
+  Segment part 51.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Run_To_Mid_Limit_Point
+                                   206A            JourneyComper (MotorControl)
+                                                   UartControl (LINUart)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 206B - 206B (0x1 bytes), align: 0
+  Segment part 52.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           motor_run_time          206B            MotorControl (MotorControl)
+                                                   MotorStatusSwitch (MotorControl)
+                                                   main (main)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 206C - 206C (0x1 bytes), align: 0
+  Segment part 53.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           motor_off_time          206C            MotorControl (MotorControl)
+                                                   MotorStatusSwitch (MotorControl)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 206D - 206D (0x1 bytes), align: 0
+  Segment part 54.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Motor_Speed             206D            CountMotorSpeed (MotorControl)
+                                                   DetectHallSignal (timer)
+                                                   MeetPlugbDetect (MotorControl)
+                                                   MotorControl (MotorControl)
+                                                   MotorStatusSwitch (MotorControl)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 206E - 206E (0x1 bytes), align: 0
+  Segment part 55.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Target_Speed            206E            MotorControl (MotorControl)
+                                                   SlowStop (MotorControl)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2024 - 2025 (0x2 bytes), align: 1
+  Segment part 56.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Motor_Duty              2024            JourneyComper (MotorControl)
+                                                   MotorControl (MotorControl)
+                                                   MotorStop (MotorControl)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 206F - 206F (0x1 bytes), align: 0
+  Segment part 57.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Set_Limit_Point_Cnt     206F            LearnDelCodeTime (Time)
+                                                   MotorStatusSwitch (MotorControl)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2070 - 2070 (0x1 bytes), align: 0
+  Segment part 59.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Delete_single_Code_Cnt
+                                   2070            LearnDelCodeTime (Time)
+                                                   RFDataDisposal (SignalSampling)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2071 - 2071 (0x1 bytes), align: 0
+  Segment part 62.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RF_High_Cnt_Buffer      2071            RFSignalDecode (SignalSampling)
+                                                   Timer3_B0 (timer)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2072 - 2072 (0x1 bytes), align: 0
+  Segment part 63.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RF_Low_Cnt_Buffer       2072            RFSignalDecode (SignalSampling)
+                                                   Timer3_B0 (timer)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2073 - 2073 (0x1 bytes), align: 0
+  Segment part 64.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Joint_Action_Motor_Buf
+                                   2073            MotorStatusSwitch (MotorControl)
+                                                   RFDataDisposal (SignalSampling)
+                                                   UartControl_WIFI (LINUart0)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2026 - 2027 (0x2 bytes), align: 1
+  Segment part 65.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Joint_Action_Time_Cnt   2026            MotorStatusSwitch (MotorControl)
+                                                   RFDataDisposal (SignalSampling)
+                                                   UartControl_WIFI (LINUart0)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2028 - 2029 (0x2 bytes), align: 1
+  Segment part 66.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Joint_Level_ADJ_Time    2028            LearnDelCodeTime (Time)
+                                                   MotorStatusSwitch (MotorControl)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 202A - 202B (0x2 bytes), align: 1
+  Segment part 69.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Current_Current_mA      202A            ADSamping (ADSampling)
+                                                   MeetPlugbDetect (MotorControl)
+                                                   MotorControl (MotorControl)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2074 - 2074 (0x1 bytes), align: 0
+  Segment part 70.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           flag_tx                 2074            Enter_test (SignalSampling)
+                                                   KeyManage (KeyManage)
+                                                   Motor_Data_Change_Send (LINUart0)
+                                                   UartStartupTX (LINUart0)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2075 - 2075 (0x1 bytes), align: 0
+  Segment part 71.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           flag_rx                 2075            TimeControl (Time)
+                                                   UartDataDisposal (LINUart0)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2076 - 2076 (0x1 bytes), align: 0
+  Segment part 72.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           rx_tc                   2076            TimeControl (Time)
+                                                   USCI_A0_ISR (LINUart0)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2077 - 2077 (0x1 bytes), align: 0
+  Segment part 73.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           respons_tc              2077            UartStartupTX (LINUart0)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2078 - 2078 (0x1 bytes), align: 0
+  Segment part 74.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           tx_c                    2078            Enter_test (SignalSampling)
+                                                   KeyManage (KeyManage)
+                                                   Motor_Data_Change_Send (LINUart0)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2079 - 2079 (0x1 bytes), align: 0
+  Segment part 76.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           red_led_tc2             2079            UartDataDisposal (LINUart0)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 207A - 207A (0x1 bytes), align: 0
+  Segment part 78.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           test_fail_tc            207A            UartDataDisposal (LINUart0)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 207B - 207B (0x1 bytes), align: 0
+  Segment part 79.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Motor_Status_bak        207B            Uart1DataDisposal (LINUart)
+                                                   UartControl (LINUart)
+                                                   UartDataDisposal (LINUart0)
+                                                   main (main)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 207C - 207C (0x1 bytes), align: 0
+  Segment part 81.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           tx_ok_tc                207C            USCI_A0_ISR (LINUart0)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 207D - 207D (0x1 bytes), align: 0
+  Segment part 83.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           tx_data                 207D            Enter_test (SignalSampling)
+                                                   KeyManage (KeyManage)
+                                                   Motor_Data_Change_Send (LINUart0)
+                                                   UartStartupTX (LINUart0)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 207E - 207E (0x1 bytes), align: 0
+  Segment part 89.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Motor_Status_Buffer_1   207E            Angle_calculation (MotorControl)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 202C - 202F (0x4 bytes), align: 1
+  Segment part 90.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Click_the_Angle_of_hall
+                                   202C            JourneyComper (MotorControl)
+                                                   UartDataDisposal (LINUart0)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 207F - 207F (0x1 bytes), align: 0
+  Segment part 91.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           SendTX_interval_Time    207F            UartDataDisposal (LINUart0)
+                                                   UartStartupTX (LINUart0)
+                                                   main (main)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2080 - 2080 (0x1 bytes), align: 0
+  Segment part 92.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Time_Power_On           2080            Enter_test (SignalSampling)
+                                                   Initialize (Initialize)
+                                                   LearnDelCodeTime (Time)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2081 - 2081 (0x1 bytes), align: 0
+  Segment part 93.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           learn_key_cnt           2081            Enter_test (SignalSampling)
+                                                   Initialize (Initialize)
+                                                   LearnDelCodeTime (Time)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2082 - 2082 (0x1 bytes), align: 0
+  Segment part 94.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Current_Angle_5         2082            Dispose_All_Date_For_TX (LINUart0)
+                                                   UartStartupTX (LINUart0)
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 802A - 802A (0x1 bytes), align: 0
+  Segment part 32.            Intra module refs:   Time_10ms_Cnt
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 802B - 802B (0x1 bytes), align: 0
+  Segment part 34.            Intra module refs:   Time_50ms_Cnt
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 802C - 802C (0x1 bytes), align: 0
+  Segment part 36.            Intra module refs:   Time_100ms_Cnt
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 802D - 802D (0x1 bytes), align: 0
+  Segment part 38.            Intra module refs:   Time_500ms_Cnt
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 802E - 802E (0x1 bytes), align: 0
+  Segment part 40.            Intra module refs:   Time_1s_Cnt
+
+    *************************************************************************
+
+  FILE NAME : C:\Users\133\Desktop\AC210-13-V1.0-AM35-6-20-MEL-P-220430A-V2.0\program\Debug\Obj\Initialize.r43
+  PROGRAM MODULE, NAME : Initialize
+
+  SEGMENTS IN THE MODULE
+  ======================
+DATA16_AN
+  Relative segment, address: 0180 - 0181 (0x2 bytes), align: 0
+  Segment part 1. ROOT        Intra module refs:   CLKSetting
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_CSCTL0_L             0180 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           CSCTL0                  0180 
+           CSCTL0_H                0181 
+           CSCTL0_L                0180 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0182 - 0183 (0x2 bytes), align: 0
+  Segment part 2. ROOT        Intra module refs:   CLKSetting
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_CSCTL1_L             0182 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           CSCTL1                  0182 
+           CSCTL1_H                0183 
+           CSCTL1_L                0182 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0184 - 0185 (0x2 bytes), align: 0
+  Segment part 3. ROOT        Intra module refs:   CLKSetting
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_CSCTL2_L             0184 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           CSCTL2                  0184 
+           CSCTL2_H                0185 
+           CSCTL2_L                0184 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0186 - 0187 (0x2 bytes), align: 0
+  Segment part 4. ROOT        Intra module refs:   CLKSetting
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_CSCTL3_L             0186 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           CSCTL3                  0186 
+           CSCTL3_H                0187 
+           CSCTL3_L                0186 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0188 - 0189 (0x2 bytes), align: 0
+  Segment part 5. ROOT        Intra module refs:   CLKSetting
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_CSCTL4_L             0188 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           CSCTL4                  0188 
+           CSCTL4_H                0189 
+           CSCTL4_L                0188 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 018A - 018B (0x2 bytes), align: 0
+  Segment part 6. ROOT        Intra module refs:   CLKSetting
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_CSCTL5_L             018A 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           CSCTL5                  018A 
+           CSCTL5_H                018B 
+           CSCTL5_L                018A 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 018E - 018F (0x2 bytes), align: 0
+  Segment part 7. ROOT        Intra module refs:   CLKSetting
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_CSCTL7_L             018E 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           CSCTL7                  018E 
+           CSCTL7_H                018F 
+           CSCTL7_L                018E 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0202 - 0203 (0x2 bytes), align: 0
+  Segment part 8. ROOT        Intra module refs:   GPIOSetting
+                                                   UartStartupTX (LINUart0)
+                                                   main (main)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_PAOUT_L              0202 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PAOUT                   0202 
+           PAOUT_H                 0203 
+           PAOUT_L                 0202 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0204 - 0205 (0x2 bytes), align: 0
+  Segment part 9. ROOT        Intra module refs:   GPIOSetting
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_PADIR_L              0204 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PADIR                   0204 
+           PADIR_H                 0205 
+           PADIR_L                 0204 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0222 - 0223 (0x2 bytes), align: 0
+  Segment part 12. ROOT       Intra module refs:   GPIOSetting
+                                                   JourneyComper (MotorControl)
+                                                   LinUartInit (LINUart)
+                                                   MotorControl (MotorControl)
+                                                   MotorDown (MotorControl)
+                                                   MotorStop (MotorControl)
+                                                   MotorUp (MotorControl)
+                                                   Uart1StartupTX (LINUart)
+                                                   Uart1_Status_Inspect (LINUart)
+                                                   UartDataDisposal (LINUart0)
+                                                   UartStartupTX (LINUart0)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_PBOUT_L              0222 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PBOUT                   0222 
+           PBOUT_H                 0223 
+           PBOUT_L                 0222 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0224 - 0225 (0x2 bytes), align: 0
+  Segment part 13. ROOT       Intra module refs:   GPIOSetting
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_PBDIR_L              0224 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PBDIR                   0224 
+           PBDIR_H                 0225 
+           PBDIR_L                 0224 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0226 - 0227 (0x2 bytes), align: 0
+  Segment part 14. ROOT       Intra module refs:   GPIOSetting
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_PBREN_L              0226 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PBREN                   0226 
+           PBREN_H                 0227 
+           PBREN_L                 0226 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 022A - 022B (0x2 bytes), align: 0
+  Segment part 15. ROOT       Intra module refs:   GPIOSetting
+                                                   LinUartInit (LINUart)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_PBSEL0_L             022A 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PBSEL0                  022A 
+           PBSEL0_H                022B 
+           PBSEL0_L                022A 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 022C - 022D (0x2 bytes), align: 0
+  Segment part 16. ROOT       Intra module refs:   GPIOSetting
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_PBSEL1_L             022C 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PBSEL1                  022C 
+           PBSEL1_H                022D 
+           PBSEL1_L                022C 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0242 - 0243 (0x2 bytes), align: 0
+  Segment part 17. ROOT       Intra module refs:   GPIOSetting
+                                                   MotorDown (MotorControl)
+                                                   MotorUp (MotorControl)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_PCOUT_L              0242 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PCOUT                   0242 
+           PCOUT_H                 0243 
+           PCOUT_L                 0242 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0244 - 0245 (0x2 bytes), align: 0
+  Segment part 18. ROOT       Intra module refs:   GPIOSetting
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_PCDIR_L              0244 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PCDIR                   0244 
+           PCDIR_H                 0245 
+           PCDIR_L                 0244 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 024A - 024B (0x2 bytes), align: 0
+  Segment part 19. ROOT       Intra module refs:   GPIOSetting
+                                                   MotorDown (MotorControl)
+                                                   MotorUp (MotorControl)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_PCSEL0_L             024A 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PCSEL0                  024A 
+           PCSEL0_H                024B 
+           PCSEL0_L                024A 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 024C - 024D (0x2 bytes), align: 0
+  Segment part 20. ROOT       Intra module refs:   GPIOSetting
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_PCSEL1_L             024C 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PCSEL1                  024C 
+           PCSEL1_H                024D 
+           PCSEL1_L                024C 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0130 - 0131 (0x2 bytes), align: 0
+  Segment part 21. ROOT       Intra module refs:   GPIOSetting
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_PM5CTL0_L            0130 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PM5CTL0                 0130 
+           PM5CTL0_H               0131 
+           PM5CTL0_L               0130 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0160 - 0161 (0x2 bytes), align: 0
+  Segment part 22. ROOT       Intra module refs:   GPIOSetting
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_SYSCFG0_L            0160 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           SYSCFG0                 0160 
+           SYSCFG0_H               0161 
+           SYSCFG0_L               0160 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0400 - 0401 (0x2 bytes), align: 0
+  Segment part 23. ROOT       Intra module refs:   TIMXSetting
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_TB2CTL_L             0400 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           TB2CTL                  0400 
+           TB2CTL_H                0401 
+           TB2CTL_L                0400 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0402 - 0403 (0x2 bytes), align: 0
+  Segment part 24. ROOT       Intra module refs:   TIMXSetting
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_TB2CCTL0_L           0402 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           TB2CCTL0                0402 
+           TB2CCTL0_H              0403 
+           TB2CCTL0_L              0402 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0412 - 0413 (0x2 bytes), align: 0
+  Segment part 25. ROOT       Intra module refs:   TIMXSetting
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_TB2CCR0_L            0412 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           TB2CCR0                 0412 
+           TB2CCR0_H               0413 
+           TB2CCR0_L               0412 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0440 - 0441 (0x2 bytes), align: 0
+  Segment part 26. ROOT       Intra module refs:   TIMXSetting
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_TB3CTL_L             0440 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           TB3CTL                  0440 
+           TB3CTL_H                0441 
+           TB3CTL_L                0440 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0442 - 0443 (0x2 bytes), align: 0
+  Segment part 27. ROOT       Intra module refs:   TIMXSetting
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_TB3CCTL0_L           0442 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           TB3CCTL0                0442 
+           TB3CCTL0_H              0443 
+           TB3CCTL0_L              0442 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0444 - 0445 (0x2 bytes), align: 0
+  Segment part 28. ROOT       Intra module refs:   TIMXSetting
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_TB3CCTL1_L           0444 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           TB3CCTL1                0444 
+           TB3CCTL1_H              0445 
+           TB3CCTL1_L              0444 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0452 - 0453 (0x2 bytes), align: 0
+  Segment part 29. ROOT       Intra module refs:   TIMXSetting
+                                                   Timer3_B0 (timer)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_TB3CCR0_L            0452 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           TB3CCR0                 0452 
+           TB3CCR0_H               0453 
+           TB3CCR0_L               0452 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0454 - 0455 (0x2 bytes), align: 0
+  Segment part 30. ROOT       Intra module refs:   TIMXSetting
+                                                   Timer3_B1 (Time)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_TB3CCR1_L            0454 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           TB3CCR1                 0454 
+           TB3CCR1_H               0455 
+           TB3CCR1_L               0454 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: BEAC - BEB7 (0xc bytes), align: 1
+  Segment part 33.            Intra module refs:   Initialize
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Delay                   BEAC 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: BB0A - BB45 (0x3c bytes), align: 1
+  Segment part 34.            Intra module refs:   Initialize
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           CLKSetting              BB0A 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: BC28 - BC5B (0x34 bytes), align: 1
+  Segment part 35.            Intra module refs:   Initialize
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TIMXSetting             BC28 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: B5F8 - B675 (0x7e bytes), align: 1
+  Segment part 36.            Intra module refs:   Initialize
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           GPIOSetting             B5F8 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: B762 - B7D1 (0x70 bytes), align: 1
+  Segment part 37.            Intra module refs:   Initialize
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           VariableInitialize      B762 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: B8AA - B911 (0x68 bytes), align: 1
+  Segment part 38.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Initialize              B8AA            main (main)
+               calls direct
+
+    *************************************************************************
+
+  FILE NAME : C:\Users\133\Desktop\AC210-13-V1.0-AM35-6-20-MEL-P-220430A-V2.0\program\Debug\Obj\KeyManage.r43
+  PROGRAM MODULE, NAME : KeyManage
+
+  SEGMENTS IN THE MODULE
+  ======================
+DATA16_AN
+  Relative segment, address: 0220 - 0221 (0x2 bytes), align: 0
+  Segment part 1. ROOT        Intra module refs:   DetectHallSignal (timer)
+                                                   KeyIN
+                                                   KeyManage
+                                                   MeetPlugbDetect (MotorControl)
+                                                   MotorControl (MotorControl)
+                                                   Timer3_B0 (timer)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_PBIN_L               0220 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PBIN                    0220 
+           PBIN_H                  0221 
+           PBIN_L                  0220 
+    -------------------------------------------------------------------------
+DATA16_I
+  Relative segment, address: 2007 - 2007 (0x1 bytes), align: 0
+  Segment part 3.             Intra module refs:   KeyManage
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           Key_ON_Cnt              2007 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2083 - 2083 (0x1 bytes), align: 0
+  Segment part 5.             Intra module refs:   KeyManage
+                                                   NoKey
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           Key_Old_Value           2083 
+    -------------------------------------------------------------------------
+DATA16_I
+  Relative segment, address: 2008 - 2008 (0x1 bytes), align: 0
+  Segment part 6.             Intra module refs:   KeyManage
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           Learn_Key_ON_Cnt        2008 
+    -------------------------------------------------------------------------
+DATA16_I
+  Relative segment, address: 2009 - 2009 (0x1 bytes), align: 0
+  Segment part 8.             Intra module refs:   KeyManage
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           Learn_Key_OFF_Cnt       2009 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2030 - 2031 (0x2 bytes), align: 1
+  Segment part 10.            Intra module refs:   KeyManage
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           Learn_Key_Cnt           2030 
+    -------------------------------------------------------------------------
+DATA16_I
+  Relative segment, address: 200A - 200A (0x1 bytes), align: 0
+  Segment part 11.            Intra module refs:   KeyManage
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           Direction_Key_ON_Cnt    200A 
+    -------------------------------------------------------------------------
+DATA16_I
+  Relative segment, address: 200B - 200B (0x1 bytes), align: 0
+  Segment part 13.            Intra module refs:   KeyManage
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           Direction_Key_OFF_Cnt   200B 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2032 - 2033 (0x2 bytes), align: 1
+  Segment part 15.            Intra module refs:   KeyManage
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           Direction_Key_Cnt       2032 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2084 - 2084 (0x1 bytes), align: 0
+  Segment part 16.            Intra module refs:   KeyControl
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           Key_Status_Cnt          2084 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2085 - 2085 (0x1 bytes), align: 0
+  Segment part 17.            Intra module refs:   KeyManage
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           CLR_Net_Key_Num         2085 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2034 - 2035 (0x2 bytes), align: 1
+  Segment part 18.            Intra module refs:   KeyManage
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           CLR_Net_Key_Time_Out_Cnt
+                                   2034 
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 8024 - 8027 (0x4 bytes), align: 0
+  Segment part 19.            Intra module refs:   KeyControl
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           KeyLoopArray            8024 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2086 - 2086 (0x1 bytes), align: 0
+  Segment part 20.            Intra module refs:   KeyManage
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           KeyFlag                 2086 
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 8000 - 8017 (0x18 bytes), align: 1
+  Segment part 21.            Intra module refs:   KeyManage
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           KeyArray                8000 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: BDD8 - BDF5 (0x1e bytes), align: 1
+  Segment part 22.            Intra module refs:   KeyManage
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           KeyIN                   BDD8 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: B9D4 - BA2D (0x5a bytes), align: 1
+  Segment part 23.            Intra module refs:   KeyArray
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           KeyControl              B9D4 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: BD9C - BDB9 (0x1e bytes), align: 1
+  Segment part 24.            Intra module refs:   KeyArray
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           NoKey                   BD9C 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: A696 - A87D (0x1e8 bytes), align: 1
+  Segment part 26.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           KeyManage               A696            main (main)
+               calls direct and indirect
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 802F - 802F (0x1 bytes), align: 0
+  Segment part 4.             Intra module refs:   Key_ON_Cnt
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 8030 - 8030 (0x1 bytes), align: 0
+  Segment part 7.             Intra module refs:   Learn_Key_ON_Cnt
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 8031 - 8031 (0x1 bytes), align: 0
+  Segment part 9.             Intra module refs:   Learn_Key_OFF_Cnt
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 8032 - 8032 (0x1 bytes), align: 0
+  Segment part 12.            Intra module refs:   Direction_Key_ON_Cnt
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 8033 - 8033 (0x1 bytes), align: 0
+  Segment part 14.            Intra module refs:   Direction_Key_OFF_Cnt
+
+    *************************************************************************
+
+  FILE NAME : C:\Users\133\Desktop\AC210-13-V1.0-AM35-6-20-MEL-P-220430A-V2.0\program\Debug\Obj\LINUart.r43
+  PROGRAM MODULE, NAME : LINUart
+
+  SEGMENTS IN THE MODULE
+  ======================
+DATA16_AN
+  Relative segment, address: 0580 - 0581 (0x2 bytes), align: 0
+  Segment part 3. ROOT        Intra module refs:   LinUartInit
+                                                   USCI_A1_ISR
+                                                   Uart1_Status_Inspect
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCA1CTLW0_L          0580 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCA1CTLW0               0580 
+           UCA1CTLW0_H             0581 
+           UCA1CTLW0_L             0580 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0586 - 0587 (0x2 bytes), align: 0
+  Segment part 4. ROOT        Intra module refs:   LinUartInit
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCA1BRW_L            0586 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCA1BRW                 0586 
+           UCA1BRW_H               0587 
+           UCA1BRW_L               0586 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 058C - 058D (0x2 bytes), align: 0
+  Segment part 5. ROOT        Intra module refs:   USCI_A1_ISR
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCA1RXBUF_L          058C 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCA1RXBUF               058C 
+           UCA1RXBUF_H             058D 
+           UCA1RXBUF_L             058C 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 058E - 058F (0x2 bytes), align: 0
+  Segment part 6. ROOT        Intra module refs:   USCI_A1_ISR
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCA1TXBUF_L          058E 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCA1TXBUF               058E 
+           UCA1TXBUF_H             058F 
+           UCA1TXBUF_L             058E 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 059A - 059B (0x2 bytes), align: 0
+  Segment part 7. ROOT        Intra module refs:   LinUartInit
+                                                   USCI_A1_ISR
+                                                   Uart1StartupTX
+                                                   Uart1_Status_Inspect
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCA1IE_L             059A 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCA1IE                  059A 
+           UCA1IE_H                059B 
+           UCA1IE_L                059A 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 059C - 059D (0x2 bytes), align: 0
+  Segment part 8. ROOT        Intra module refs:   Uart1StartupTX
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCA1IFG_L            059C 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCA1IFG                 059C 
+           UCA1IFG_H               059D 
+           UCA1IFG_L               059C 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 059E - 059F (0x2 bytes), align: 0
+  Segment part 9. ROOT        Intra module refs:   USCI_A1_ISR
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCA1IV_L             059E 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCA1IV                  059E 
+           UCA1IV_H                059F 
+           UCA1IV_L                059E 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2087 - 2087 (0x1 bytes), align: 0
+  Segment part 12.            Intra module refs:   USCI_A1_ISR
+                                                   Uart1_Status_Inspect
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           Uart1_Byte_Cnt          2087 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2088 - 2088 (0x1 bytes), align: 0
+  Segment part 13.            Intra module refs:   USCI_A1_ISR
+                                                   Uart1StartupTX
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           Uart1_TX_Byte_Cnt       2088 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2089 - 2092 (0xa bytes), align: 0
+  Segment part 14.            Intra module refs:   USCI_A1_ISR
+                                                   Uart1StartupTX
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           Uart1_TX_Array          2089 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2093 - 2099 (0x7 bytes), align: 0
+  Segment part 15.            Intra module refs:   USCI_A1_ISR
+                                                   Uart1DataDisposal
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           Uart1_RX_Array          2093 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 209A - 209A (0x1 bytes), align: 0
+  Segment part 16.            Intra module refs:   USCI_A1_ISR
+                                                   Uart1_Status_Inspect
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           Uart1_NO_Rx_Cnt         209A 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 209B - 209B (0x1 bytes), align: 0
+  Segment part 17.            Intra module refs:   USCI_A1_ISR
+                                                   Uart1_Status_Inspect
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           Uart1_NO_Tx_Cnt         209B 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 209C - 209C (0x1 bytes), align: 0
+  Segment part 18.            Intra module refs:   Uart1DataDisposal
+                                                   Uart1StartupTX
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           Inquire_Function_Flag   209C 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 209D - 209D (0x1 bytes), align: 0
+  Segment part 19.            Intra module refs:   Uart1DataDisposal
+                                                   Uart1StartupTX
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           Meet_Plugb_Level_Buff   209D 
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 8018 - 8023 (0xc bytes), align: 1
+  Segment part 20.            Intra module refs:   LinUartInit
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Baud_Rate_Array         8018 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: B976 - B9D3 (0x5e bytes), align: 1
+  Segment part 21.            Intra module refs:   Uart1DataDisposal
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           LinUartInit             B976            Initialize (Initialize)
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: BCBC - BCE5 (0x2a bytes), align: 1
+  Segment part 22.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Uart1_Status_Inspect    BCBC            main (main)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: BE12 - BE2B (0x1a bytes), align: 1
+  Segment part 23.            Intra module refs:   Uart1DataDisposal
+                                                   Uart1StartupTX
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           DataCRC                 BE12 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: B270 - B329 (0xba bytes), align: 1
+  Segment part 24.            Intra module refs:   Uart1StartupTX
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           JourneyPercentCount     B270            Dispose_All_Date_For_TX (LINUart0)
+                                                   Motor_Data_Change_Send (LINUart0)
+                                                   UartStartupTX (LINUart0)
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: A9D6 - AAFD (0x128 bytes), align: 1
+  Segment part 25.            Intra module refs:   Uart1DataDisposal
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           CountPercentPlace       A9D6            UartDataDisposal (LINUart0)
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: AD2C - AE2B (0x100 bytes), align: 1
+  Segment part 26.            Intra module refs:   Uart1DataDisposal
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           UartControl             AD2C 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: A87E - A9D5 (0x158 bytes), align: 1
+  Segment part 27.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Uart1StartupTX          A87E            main (main)
+               calls direct
+    -------------------------------------------------------------------------
+ISR_CODE
+  Relative segment, address: 805E - 80EF (0x92 bytes), align: 1
+  Segment part 30.            Intra module refs:   USCI_A1_ISR::??INTVEC 64
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           USCI_A1_ISR             805E 
+               interrupt function
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: BBF2 - BC27 (0x36 bytes), align: 1
+  Segment part 28.            Intra module refs:   Uart1DataDisposal
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           LearnUartID             BBF2 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9FDC - A25D (0x282 bytes), align: 1
+  Segment part 29.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Uart1DataDisposal       9FDC            main (main)
+               calls direct
+    -------------------------------------------------------------------------
+INTVEC
+  Common segment, address: FFA2 - FFE3 (0x42 bytes), align: 1
+  Segment part 10. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           USCI_A1_ISR::??INTVEC 64
+                                   FFE2 
+
+    *************************************************************************
+
+  FILE NAME : C:\Users\133\Desktop\AC210-13-V1.0-AM35-6-20-MEL-P-220430A-V2.0\program\Debug\Obj\LINUart0.r43
+  PROGRAM MODULE, NAME : LINUart0
+
+  SEGMENTS IN THE MODULE
+  ======================
+DATA16_AN
+  Relative segment, address: 0500 - 0501 (0x2 bytes), align: 0
+  Segment part 4. ROOT        Intra module refs:   LinUart0Init
+                                                   USCI_A0_ISR
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCA0CTLW0_L          0500 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCA0CTLW0               0500 
+           UCA0CTLW0_H             0501 
+           UCA0CTLW0_L             0500 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0506 - 0507 (0x2 bytes), align: 0
+  Segment part 5. ROOT        Intra module refs:   LinUart0Init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCA0BRW_L            0506 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCA0BRW                 0506 
+           UCA0BRW_H               0507 
+           UCA0BRW_L               0506 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 050C - 050D (0x2 bytes), align: 0
+  Segment part 6. ROOT        Intra module refs:   USCI_A0_ISR
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCA0RXBUF_L          050C 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCA0RXBUF               050C 
+           UCA0RXBUF_H             050D 
+           UCA0RXBUF_L             050C 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 050E - 050F (0x2 bytes), align: 0
+  Segment part 7. ROOT        Intra module refs:   USCI_A0_ISR
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCA0TXBUF_L          050E 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCA0TXBUF               050E 
+           UCA0TXBUF_H             050F 
+           UCA0TXBUF_L             050E 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 051A - 051B (0x2 bytes), align: 0
+  Segment part 8. ROOT        Intra module refs:   LinUart0Init
+                                                   Start_TX
+                                                   USCI_A0_ISR
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCA0IE_L             051A 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCA0IE                  051A 
+           UCA0IE_H                051B 
+           UCA0IE_L                051A 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 051C - 051D (0x2 bytes), align: 0
+  Segment part 9. ROOT        Intra module refs:   Start_TX
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCA0IFG_L            051C 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCA0IFG                 051C 
+           UCA0IFG_H               051D 
+           UCA0IFG_L               051C 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 051E - 051F (0x2 bytes), align: 0
+  Segment part 10. ROOT       Intra module refs:   USCI_A0_ISR
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCA0IV_L             051E 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCA0IV                  051E 
+           UCA0IV_H                051F 
+           UCA0IV_L                051E 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 209E - 209E (0x1 bytes), align: 0
+  Segment part 13.            Intra module refs:   USCI_A0_ISR
+                                                   UartDataDisposal
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           rx_i                    209E 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 209F - 209F (0x1 bytes), align: 0
+  Segment part 14.            Intra module refs:   USCI_A0_ISR
+                                                   UartDataDisposal
+                                                   UartStartupTX
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           tx_i                    209F 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 20A0 - 20A0 (0x1 bytes), align: 0
+  Segment part 15.            Intra module refs:   Dispose_All_Date_For_TX
+                                                   USCI_A0_ISR
+                                                   UartDataDisposal
+                                                   UartStartupTX
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           tx_len                  20A0 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 20A1 - 20E6 (0x46 bytes), align: 0
+  Segment part 16.            Intra module refs:   USCI_A0_ISR
+                                                   UartDataDisposal
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           Uart_buf_rx             20A1 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 20E7 - 212C (0x46 bytes), align: 0
+  Segment part 17.            Intra module refs:   Dispose_All_Date_For_TX
+                                                   USCI_A0_ISR
+                                                   UartDataDisposal
+                                                   UartStartupTX
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           Uart_buf_tx             20E7 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: BD58 - BD7D (0x26 bytes), align: 1
+  Segment part 22.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           LinUart0Init            BD58            Initialize (Initialize)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: BE42 - BE53 (0x12 bytes), align: 1
+  Segment part 23.            Intra module refs:   Dispose_All_Date_For_TX
+                                                   UartDataDisposal
+                                                   UartStartupTX
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           sum                     BE42 
+    -------------------------------------------------------------------------
+ISR_CODE
+  Relative segment, address: 80F0 - 81AB (0xbc bytes), align: 1
+  Segment part 32.            Intra module refs:   USCI_A0_ISR::??INTVEC 66
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           USCI_A0_ISR             80F0 
+               interrupt function
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: BE92 - BE9F (0xe bytes), align: 1
+  Segment part 24.            Intra module refs:   UartDataDisposal
+                                                   UartStartupTX
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Start_TX                BE92 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: B45C - B4EB (0x90 bytes), align: 1
+  Segment part 26.            Intra module refs:   UartDataDisposal
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           UartControl_WIFI        B45C 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: A25E - A481 (0x224 bytes), align: 1
+  Segment part 28.            Intra module refs:   UartDataDisposal
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Dispose_All_Date_For_TX
+                                   A25E 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 8E14 - 928F (0x47c bytes), align: 1
+  Segment part 29.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           UartStartupTX           8E14            main (main)
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 8246 - 892D (0x6e8 bytes), align: 1
+  Segment part 30.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           UartDataDisposal        8246            main (main)
+               calls direct
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 212D - 212D (0x1 bytes), align: 0
+  Segment part 21.            Intra module refs:   UartDataDisposal
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UartDataDisposal::flag_answer
+                                   212D 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9D3C - 9FDB (0x2a0 bytes), align: 1
+  Segment part 31.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Motor_Data_Change_Send
+                                   9D3C            main (main)
+               calls direct
+    -------------------------------------------------------------------------
+INTVEC
+  Common segment, address: FFA2 - FFE5 (0x44 bytes), align: 1
+  Segment part 11. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           USCI_A0_ISR::??INTVEC 66
+                                   FFE4 
+
+    *************************************************************************
+
+  FILE NAME : C:\Users\133\Desktop\AC210-13-V1.0-AM35-6-20-MEL-P-220430A-V2.0\program\Debug\Obj\main.r43
+  PROGRAM MODULE, NAME : main
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: AAFE - AC25 (0x128 bytes), align: 1
+  Segment part 3.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           main                    AAFE            Segment part 27 (?cstart)
+               calls direct
+
+    *************************************************************************
+
+  FILE NAME : C:\Users\133\Desktop\AC210-13-V1.0-AM35-6-20-MEL-P-220430A-V2.0\program\Debug\Obj\MotorControl.r43
+  PROGRAM MODULE, NAME : MotorControl
+
+  SEGMENTS IN THE MODULE
+  ======================
+DATA16_AN
+  Relative segment, address: 0404 - 0405 (0x2 bytes), align: 0
+  Segment part 5. ROOT        Intra module refs:   MotorDown
+                                                   MotorUp
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_TB2CCTL1_L           0404 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           TB2CCTL1                0404 
+           TB2CCTL1_H              0405 
+           TB2CCTL1_L              0404 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0406 - 0407 (0x2 bytes), align: 0
+  Segment part 6. ROOT        Intra module refs:   MotorDown
+                                                   MotorUp
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_TB2CCTL2_L           0406 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           TB2CCTL2                0406 
+           TB2CCTL2_H              0407 
+           TB2CCTL2_L              0406 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0414 - 0415 (0x2 bytes), align: 0
+  Segment part 7. ROOT        Intra module refs:   MotorDown
+                                                   MotorStop
+                                                   MotorUp
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_TB2CCR1_L            0414 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           TB2CCR1                 0414 
+           TB2CCR1_H               0415 
+           TB2CCR1_L               0414 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2036 - 2037 (0x2 bytes), align: 1
+  Segment part 9.             Intra module refs:   MeetPlugbDetect
+                                                   MotorControl
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           Meet_Plugb_Cnt1         2036 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2038 - 2039 (0x2 bytes), align: 1
+  Segment part 10.            Intra module refs:   MeetPlugbDetect
+                                                   MotorControl
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           Meet_Plugb_Cnt2         2038 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 203A - 203B (0x2 bytes), align: 1
+  Segment part 11.            Intra module refs:   MeetPlugbDetect
+                                                   MotorControl
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           Meet_Plugb_Cnt3         203A 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 203C - 203F (0x4 bytes), align: 1
+  Segment part 12.            Intra module refs:   MeetPlugbDetect
+                                                   MotorControl
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           Hall_Pulse_Amount_Buff
+                                   203C 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2040 - 2041 (0x2 bytes), align: 1
+  Segment part 13.            Intra module refs:   MeetPlugbDetect
+                                                   MotorControl
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           Meet_Plugb_Cnt          2040 
+    -------------------------------------------------------------------------
+DATA16_I
+  Relative segment, address: 2000 - 2001 (0x2 bytes), align: 1
+  Segment part 14.            Intra module refs:   MotorControl
+                                                   MotorStatusSwitch
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           Motor_RunTime_Cnt       2000 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 212E - 212E (0x1 bytes), align: 0
+  Segment part 16.            Intra module refs:   MotorControl
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Motor_Speed_Buff        212E 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 212F - 212F (0x1 bytes), align: 0
+  Segment part 17.            Intra module refs:   MotorControl
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           speed_control_cnt       212F 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2042 - 2049 (0x8 bytes), align: 1
+  Segment part 20.            Intra module refs:   CountMotorSpeed
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ADC_CUR_Array           2042 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2130 - 2130 (0x1 bytes), align: 0
+  Segment part 21.            Intra module refs:   CountMotorSpeed
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ADC_CUR_Array_Index     2130 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: B7D2 - B83D (0x6c bytes), align: 1
+  Segment part 24.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           CountMotorSpeed         B7D2            main (main)
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: AE2C - AF23 (0xf8 bytes), align: 1
+  Segment part 25.            Intra module refs:   MotorControl
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           MeetPlugbDetect         AE2C 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: B6F0 - B761 (0x72 bytes), align: 1
+  Segment part 26.            Intra module refs:   JourneyComper
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           SlowStop                B6F0 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 96A0 - 9A07 (0x368 bytes), align: 1
+  Segment part 28.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           JourneyComper           96A0            main (main)
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9A08 - 9D3B (0x334 bytes), align: 1
+  Segment part 29.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Angle_calculation       9A08            main (main)
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: BD7E - BD9B (0x1e bytes), align: 1
+  Segment part 30.            Intra module refs:   MotorControl
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           MotorUp                 BD7E 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: BDBA - BDD7 (0x1e bytes), align: 1
+  Segment part 31.            Intra module refs:   MotorControl
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           MotorDown               BDBA 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: BE84 - BE91 (0xe bytes), align: 1
+  Segment part 27.            Intra module refs:   JourneyComper
+                                                   MotorControl
+                                                   MotorStatusSwitch
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           MotorStop               BE84 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: BE2C - BE41 (0x16 bytes), align: 1
+  Segment part 32.            Intra module refs:   MotorControl
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Duty_Add                BE2C 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: BEA0 - BEAB (0xc bytes), align: 1
+  Segment part 33.            Intra module refs:   MotorControl
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Duty_Sub                BEA0 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9290 - 969F (0x410 bytes), align: 1
+  Segment part 34.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           MotorControl            9290            main (main)
+               calls direct
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2131 - 2131 (0x1 bytes), align: 0
+  Segment part 22.            Intra module refs:   MotorControl
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           MotorControl::Time_Limit_Cnt
+                                   2131 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2132 - 2132 (0x1 bytes), align: 0
+  Segment part 23.            Intra module refs:   MotorControl
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           MotorControl{1}{42}::Jiggle_Direction
+                                   2132 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: A482 - A695 (0x214 bytes), align: 1
+  Segment part 35.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           MotorStatusSwitch       A482            main (main)
+               calls direct
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 8028 - 8029 (0x2 bytes), align: 1
+  Segment part 15.            Intra module refs:   Motor_RunTime_Cnt
+
+    *************************************************************************
+
+  FILE NAME : C:\Users\133\Desktop\AC210-13-V1.0-AM35-6-20-MEL-P-220430A-V2.0\program\Debug\Obj\PowerInScan.r43
+  PROGRAM MODULE, NAME : PowerInScan
+
+  SEGMENTS IN THE MODULE
+  ======================
+
+    *************************************************************************
+
+  FILE NAME : C:\Users\133\Desktop\AC210-13-V1.0-AM35-6-20-MEL-P-220430A-V2.0\program\Debug\Obj\SignalSampling.r43
+  PROGRAM MODULE, NAME : SignalSampling
+
+  SEGMENTS IN THE MODULE
+  ======================
+DATA16_Z
+  Relative segment, address: 2133 - 2133 (0x1 bytes), align: 0
+  Segment part 3.             Intra module refs:   ErrorDisposal
+                                                   RFSignalDecode
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RF_Bit_cnt              2133 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2134 - 2134 (0x1 bytes), align: 0
+  Segment part 4.             Intra module refs:   ErrorDisposal
+                                                   RFSignalDecode
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RF_Byte_Cnt             2134 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2135 - 2135 (0x1 bytes), align: 0
+  Segment part 5.             Intra module refs:   RFSignalDecode
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RF_KeyUnloosen_Cnt      2135 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2136 - 213D (0x8 bytes), align: 0
+  Segment part 6.             Intra module refs:   RFDataDisposal
+                                                   RFDataVerify
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RF_RxData               2136 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 213E - 2145 (0x8 bytes), align: 0
+  Segment part 7.             Intra module refs:   RFDataVerify
+                                                   RFSignalDecode
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RF_RxData_Buf           213E 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 204A - 204B (0x2 bytes), align: 1
+  Segment part 8.             Intra module refs:   RFSignalDecode
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Rx_Data_P               204A 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2146 - 2146 (0x1 bytes), align: 0
+  Segment part 9.             Intra module refs:   RFStatusInspect
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RF_NO_Rx_Cnt            2146 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: BBBC - BBF1 (0x36 bytes), align: 1
+  Segment part 10.            Intra module refs:   RFDataDisposal
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Enter_test              BBBC 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: BCE6 - BD0B (0x26 bytes), align: 1
+  Segment part 11.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RFStatusInspect         BCE6            main (main)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: BE76 - BE83 (0xe bytes), align: 1
+  Segment part 12.            Intra module refs:   RFSignalDecode
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ErrorDisposal           BE76 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: B4EC - B577 (0x8c bytes), align: 1
+  Segment part 13.            Intra module refs:   LimitCollator
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           LimitLLC                B4EC 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: B0D4 - B1A1 (0xce bytes), align: 1
+  Segment part 14.            Intra module refs:   SetLimitPoint
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           LimitCollator           B0D4            Initialize (Initialize)
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: BB46 - BB81 (0x3c bytes), align: 1
+  Segment part 15.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RFDataVerify            BB46            main (main)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 892E - 8E13 (0x4e6 bytes), align: 1
+  Segment part 17.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RFDataDisposal          892E            main (main)
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: AC26 - AD2B (0x106 bytes), align: 1
+  Segment part 18.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           SetLimitPoint           AC26            main (main)
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: B1A2 - B26F (0xce bytes), align: 1
+  Segment part 19.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RFSignalDecode          B1A2            main (main)
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: AF24 - B003 (0xe0 bytes), align: 1
+  Segment part 16.            Intra module refs:   RFDataDisposal
+                                                   SetLimitPoint
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           LoopCompare             AF24            MotorStatusSwitch (MotorControl)
+
+    *************************************************************************
+
+  FILE NAME : C:\Users\133\Desktop\AC210-13-V1.0-AM35-6-20-MEL-P-220430A-V2.0\program\Debug\Obj\Time.r43
+  PROGRAM MODULE, NAME : Time
+
+  SEGMENTS IN THE MODULE
+  ======================
+DATA16_AN
+  Relative segment, address: 046E - 046F (0x2 bytes), align: 0
+  Segment part 2. ROOT        Intra module refs:   Timer3_B1
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_TB3IV_L              046E 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           TB3IV                   046E 
+           TB3IV_H                 046F 
+           TB3IV_L                 046E 
+    -------------------------------------------------------------------------
+ISR_CODE
+  Relative segment, address: 81AC - 81BF (0x14 bytes), align: 1
+  Segment part 6.             Intra module refs:   Timer3_B1::??INTVEC 72
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Timer3_B1               81AC 
+               interrupt function
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: B912 - B975 (0x64 bytes), align: 1
+  Segment part 7.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TimeControl             B912            main (main)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: B004 - B0D3 (0xd0 bytes), align: 1
+  Segment part 8.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           LearnDelCodeTime        B004            main (main)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2147 - 2147 (0x1 bytes), align: 0
+  Segment part 5.             Intra module refs:   LearnDelCodeTime
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           LearnDelCodeTime::Learn_Time_Cnt
+                                   2147 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: BD0C - BD31 (0x26 bytes), align: 1
+  Segment part 9.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           DblclickTimeLimit       BD0C            main (main)
+    -------------------------------------------------------------------------
+INTVEC
+  Common segment, address: FFA2 - FFEB (0x4a bytes), align: 1
+  Segment part 3. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Timer3_B1::??INTVEC 72
+                                   FFEA 
+
+    *************************************************************************
+
+  FILE NAME : C:\Users\133\Desktop\AC210-13-V1.0-AM35-6-20-MEL-P-220430A-V2.0\program\Debug\Obj\timer.r43
+  PROGRAM MODULE, NAME : timer
+
+  SEGMENTS IN THE MODULE
+  ======================
+DATA16_I
+  Relative segment, address: 200C - 200C (0x1 bytes), align: 0
+  Segment part 5.             Intra module refs:   Timer3_B0
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Time2_Int_Cnt           200C 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2148 - 2148 (0x1 bytes), align: 0
+  Segment part 7.             Intra module refs:   Timer3_B0
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RF_Signal_Sample1       2148 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: B32A - B3C9 (0xa0 bytes), align: 1
+  Segment part 11.            Intra module refs:   Timer3_B0
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           DetectHallSignal        B32A 
+    -------------------------------------------------------------------------
+ISR_CODE
+  Relative segment, address: 81C0 - 8245 (0x86 bytes), align: 1
+  Segment part 12.            Intra module refs:   Timer3_B0::??INTVEC 74
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Timer3_B0               81C0 
+               interrupt function
+               calls direct
+    -------------------------------------------------------------------------
+INTVEC
+  Common segment, address: FFA2 - FFED (0x4c bytes), align: 1
+  Segment part 3. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Timer3_B0::??INTVEC 74
+                                   FFEC 
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 8034 - 8034 (0x1 bytes), align: 0
+  Segment part 6.             Intra module refs:   Time2_Int_Cnt
+
+    *************************************************************************
+
+  FILE NAME : F:\IAR\430\lib\dlib\dl430xlsfn.r43
+  LIBRARY MODULE, NAME : ?_exit
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: BEB8, align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _exit                   BEB8            exit (?exit)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: BEB8 - BEBB (0x4 bytes), align: 1
+  Segment part 6.             Intra module refs:   _exit
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?cstart
+
+  SEGMENTS IN THE MODULE
+  ======================
+CSTACK
+  Relative segment, address: 2F60, align: 1
+  Segment part 1.
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 204C, align: 1
+  Segment part 2.
+    -------------------------------------------------------------------------
+DATA16_I
+  Relative segment, address: 2002, align: 1
+  Segment part 3.
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 802A, align: 1
+  Segment part 4.
+    -------------------------------------------------------------------------
+CODE_I
+  Relative segment, address: 214A, align: 1
+  Segment part 5.
+    -------------------------------------------------------------------------
+CODE_ID
+  Relative segment, address: 8246, align: 1
+  Segment part 6.
+    -------------------------------------------------------------------------
+DATA20_Z
+  Relative segment, address: 214A, align: 1
+  Segment part 7.
+    -------------------------------------------------------------------------
+DATA20_I
+  Relative segment, address: 214A, align: 1
+  Segment part 8.
+    -------------------------------------------------------------------------
+DATA20_ID
+  Relative segment, address: 8036, align: 1
+  Segment part 9.
+    -------------------------------------------------------------------------
+DATA20_C
+  Relative segment, address: 8036, align: 1
+  Segment part 10.
+    -------------------------------------------------------------------------
+DATA20_N
+  Relative segment, address: 214A, align: 1
+  Segment part 12.
+    -------------------------------------------------------------------------
+CSTART
+  Relative segment, address: 8036 - 8039 (0x4 bytes), align: 1
+  Segment part 15.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __program_start         8036            ?reset_vector (?reset_vector)
+                                                   Absolute parts (?ABS_ENTRY_MOD)
+           ?cstart_begin           8036 
+    -------------------------------------------------------------------------
+CSTART
+  Relative segment, address: 803A - 8045 (0xc bytes), align: 1
+  Segment part 20.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?cstart_init_zero       803A            ADC_CUR_Array (ADSampling)
+                                                   ADC_CUR_Array (MotorControl)
+                                                   ADC_CUR_Array_Index (ADSampling)
+                                                   ADC_CUR_Array_Index (MotorControl)
+                                                   ADC_CUR_Buffer (ADSampling)
+                                                   ADC_CUR_Cnt (ADSampling)
+                                                   CLR_Net_Key_Num (KeyManage)
+                                                   CLR_Net_Key_Time_Out_Cnt (KeyManage)
+                                                   Click_the_Angle_of_hall (GlobalVariable)
+                                                   Current_Angle_5 (GlobalVariable)
+                                                   Current_Current_mA (GlobalVariable)
+                                                   DeleteAllID::i (flash)
+                                                   DeleteAllID::j (flash)
+                                                   Delete_single_Code_Cnt (GlobalVariable)
+                                                   Delete_single_Code_ID (GlobalVariable)
+                                                   Direction_Key_Cnt (KeyManage)
+                                                   Flag (GlobalVariable)
+                                                   Flag_RF (GlobalVariable)
+                                                   Hall_Pulse_Amount_Buff (MotorControl)
+                                                   Hall_Pulse_Amount_PCT (GlobalVariable)
+                                                   Hall_Pulse_Jiggle_Buff (GlobalVariable)
+                                                   Inquire_Function_Flag (LINUart)
+                                                   Joint_Action_Motor_Buf (GlobalVariable)
+                                                   Joint_Action_Time_Cnt (GlobalVariable)
+                                                   Joint_Level_ADJ_Time (GlobalVariable)
+                                                   JourneyDelete::LIMIT_i (flash)
+                                                   KeyFlag (KeyManage)
+                                                   Key_Old_Value (KeyManage)
+                                                   Key_Status_Cnt (KeyManage)
+                                                   LearnDelCodeTime::Learn_Time_Cnt (Time)
+                                                   Learn_Key_Cnt (KeyManage)
+                                                   Meet_Plugb_Cnt (MotorControl)
+                                                   Meet_Plugb_Cnt1 (MotorControl)
+                                                   Meet_Plugb_Cnt2 (MotorControl)
+                                                   Meet_Plugb_Cnt3 (MotorControl)
+                                                   Meet_Plugb_Level_Buff (LINUart)
+                                                   MotorControl::Time_Limit_Cnt (MotorControl)
+                                                   MotorControl{1}{42}::Jiggle_Direction (MotorControl)
+                                                   Motor_Data_Bak (GlobalVariable)
+                                                   Motor_Duty (GlobalVariable)
+                                                   Motor_Speed (GlobalVariable)
+                                                   Motor_Speed_Buff (MotorControl)
+                                                   Motor_Status_Buffer_1 (GlobalVariable)
+                                                   Motor_Status_bak (GlobalVariable)
+                                                   OprationCue_Amount_Buf (GlobalVariable)
+                                                   Opretion_Event (GlobalVariable)
+                                                   RF_Bit_cnt (SignalSampling)
+                                                   RF_Byte_Cnt (SignalSampling)
+                                                   RF_Dblclick_Time (GlobalVariable)
+                                                   RF_High_Cnt (GlobalVariable)
+                                                   RF_High_Cnt_Buffer (GlobalVariable)
+                                                   RF_KeyUnloosen_Cnt (SignalSampling)
+                                                   RF_Low_Cnt (GlobalVariable)
+                                                   RF_Low_Cnt_Buffer (GlobalVariable)
+                                                   RF_NO_Rx_Cnt (SignalSampling)
+                                                   RF_RxData (SignalSampling)
+                                                   RF_RxData_Buf (SignalSampling)
+                                                   RF_Signal_Sample1 (timer)
+                                                   Run_To_Mid_Limit_Point (GlobalVariable)
+                                                   Rx_Data_P (SignalSampling)
+                                                   SendTX_interval_Time (GlobalVariable)
+                                                   Set_Limit_Point_Cnt (GlobalVariable)
+                                                   Target_Limit_Point (GlobalVariable)
+                                                   Target_Speed (GlobalVariable)
+                                                   Time_Power_On (GlobalVariable)
+                                                   Uart1_Byte_Cnt (LINUart)
+                                                   Uart1_NO_Rx_Cnt (LINUart)
+                                                   Uart1_NO_Tx_Cnt (LINUart)
+                                                   Uart1_RX_Array (LINUart)
+                                                   Uart1_TX_Array (LINUart)
+                                                   Uart1_TX_Byte_Cnt (LINUart)
+                                                   UartDataDisposal::flag_answer (LINUart0)
+                                                   Uart_buf_rx (LINUart0)
+                                                   Uart_buf_tx (LINUart0)
+                                                   flag_rx (GlobalVariable)
+                                                   flag_tx (GlobalVariable)
+                                                   learn_key_cnt (GlobalVariable)
+                                                   motor_off_time (GlobalVariable)
+                                                   motor_run_time (GlobalVariable)
+                                                   red_led_tc2 (GlobalVariable)
+                                                   respons_tc (GlobalVariable)
+                                                   rx_i (LINUart0)
+                                                   rx_tc (GlobalVariable)
+                                                   speed_control_cnt (MotorControl)
+                                                   test_fail_tc (GlobalVariable)
+                                                   tx_c (GlobalVariable)
+                                                   tx_data (GlobalVariable)
+                                                   tx_i (LINUart0)
+                                                   tx_len (LINUart0)
+                                                   tx_ok_tc (GlobalVariable)
+    -------------------------------------------------------------------------
+CSTART
+  Relative segment, address: 8046 - 8055 (0x10 bytes), align: 1
+  Segment part 21.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?cstart_init_copy       8046            Direction_Key_OFF_Cnt (KeyManage)
+                                                   Direction_Key_ON_Cnt (KeyManage)
+                                                   Key_ON_Cnt (KeyManage)
+                                                   Learn_Key_OFF_Cnt (KeyManage)
+                                                   Learn_Key_ON_Cnt (KeyManage)
+                                                   Motor_RunTime_Cnt (MotorControl)
+                                                   Time2_Int_Cnt (timer)
+                                                   Time_100ms_Cnt (GlobalVariable)
+                                                   Time_10ms_Cnt (GlobalVariable)
+                                                   Time_1s_Cnt (GlobalVariable)
+                                                   Time_500ms_Cnt (GlobalVariable)
+                                                   Time_50ms_Cnt (GlobalVariable)
+    -------------------------------------------------------------------------
+CSTART
+  Relative segment, address: 8056 - 805D (0x8 bytes), align: 1
+  Segment part 27.            Intra module refs:   Segment part 15
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?cstart_call_main       8056 
+           ?cstart_end             805E 
+    -------------------------------------------------------------------------
+CODE_ID
+  Relative segment, address: 8246, align: 1
+  Segment part 28.            Intra module refs:   Segment part 5
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?reset_vector
+
+  SEGMENTS IN THE MODULE
+  ======================
+RESET
+  Relative segment, address: FFFE - FFFF (0x2 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?reset_vector           FFFE            Segment part 15 (?cstart)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?exit
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: BEC8 - BECB (0x4 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           exit                    BEC8            Segment part 27 (?cstart)
+               calls direct
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?DivMod816u
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: BDF6 - BDF9 (0x4 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?DivMod8u               BDF6            Dispose_All_Date_For_TX (LINUart0)
+                                                   UartStartupTX (LINUart0)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: BDFA - BE11 (0x18 bytes), align: 1
+  Segment part 1.             Intra module refs:   ?DivMod8u
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?DivMod16u              BDFA            ?DivMod16s (?DivMod816s)
+                                                   CountMotorSpeed (MotorControl)
+                                                   LinUartInit (LINUart)
+                                                   SampleAverage (ADSampling)
+                                                   SlowStop (MotorControl)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?DivMod816s
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: BC5C - BC8B (0x30 bytes), align: 1
+  Segment part 1.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?DivMod16s              BC5C            JourneyComper (MotorControl)
+                                                   UartDataDisposal (LINUart0)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?DivMod32u
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: BC8C - BCBB (0x30 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?DivMod32u              BC8C            Angle_calculation (MotorControl)
+                                                   CountPercentPlace (LINUart)
+                                                   JourneyPercentCount (LINUart)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?memcpy
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: BE54 - BE65 (0x12 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           memcpy                  BE54            __data16_memcpy (?memzero)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?memzero
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: BE66 - BE75 (0x10 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __data16_memzero        BE66            ?cstart_init_zero (?cstart)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: BEBC - BEBF (0x4 bytes), align: 1
+  Segment part 3.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __data16_memcpy         BEBC            ?cstart_init_copy (?cstart)
+               calls direct
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?IndCallR15
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: BEC0 - BEC3 (0x4 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?IndCallR15             BEC0            KeyManage (KeyManage)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?__exit
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: BEC4 - BEC7 (0x4 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __exit                  BEC4            Segment part 6 (?_exit)
+                                                   _exit (?_exit)
+
+
+
+
+                ****************************************
+                *                                      *
+                *      SEGMENTS IN ADDRESS ORDER       *
+                *                                      *
+                ****************************************
+
+
+SEGMENT              SPACE    START ADDRESS   END ADDRESS     SIZE  TYPE  ALIGN
+=======              =====    =============   ===========     ====  ====  =====
+DATA16_AN                              0120 - 0121               2   rel    0
+                                       0124 - 0125               2 
+                                       0130 - 0131               2 
+                                       0160 - 0161               2 
+                                       0180 - 018B               C 
+                                       018E - 018F               2 
+                                       01CC - 01CD               2 
+                                       0202 - 0205               4 
+                                       020A - 020D               4 
+                                       0220 - 0227               8 
+                                       022A - 022D               4 
+                                       0242 - 0245               4 
+                                       024A - 024D               4 
+                                       0400 - 0407               8 
+                                       0412 - 0415               4 
+                                       0440 - 0445               6 
+                                       0452 - 0455               4 
+                                       046E - 046F               2 
+                                       0500 - 0501               2 
+                                       0506 - 0507               2 
+                                       050C - 050F               4 
+                                       051A - 051F               6 
+                                       0580 - 0581               2 
+                                       0586 - 0587               2 
+                                       058C - 058F               4 
+                                       059A - 059F               6 
+                                       0700 - 0705               6 
+                                       070A - 070B               2 
+                                       0712 - 0713               2 
+DATA16_N                               1800 - 188A              8B   rel    1
+DATA16_I                               2000 - 200C               D   rel    1
+DATA16_Z                               200E - 2148             13B   rel    1
+DATA20_N                                  214A                       rel    1
+DATA20_Z                                  214A                       rel    1
+CODE_I                                    214A                       rel    1
+DATA20_I                                  214A                       rel    1
+CSTACK                                 2F60 - 2FFF              A0   rel    1
+DATA16_C                               8000 - 8027              28   rel    1
+DATA16_ID                              8028 - 8034               D   rel    1
+DATA20_C                                  8036                       rel    1
+DATA20_ID                                 8036                       rel    1
+CSTART                                 8036 - 805D              28   rel    1
+ISR_CODE                               805E - 8245             1E8   rel    1
+CODE_ID                                   8246                       rel    1
+<CODE> 1                               8246 - BECB            3C86   rel    1
+INTVEC                                 FFA2 - FFED              4C   com    1
+RESET                                  FFFE - FFFF               2   rel    1
+
+                ****************************************
+                *                                      *
+                *        END OF CROSS REFERENCE        *
+                *                                      *
+                ****************************************
+
+ 16 100 bytes of CODE  memory
+    627 bytes of DATA  memory (+ 114 absolute )
+     53 bytes of CONST memory
+
+Errors: none
+Warnings: none
+
